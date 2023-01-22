@@ -1,4 +1,4 @@
-import styles from './Header.module.css'
+import styles from './Header.module.scss'
 import moon from '../../../public/moon.svg'
 import Image from 'next/image'
 import Link from 'next/link'
