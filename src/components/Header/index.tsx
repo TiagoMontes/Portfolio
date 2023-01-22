@@ -1,6 +1,7 @@
 import styles from './Header.module.css'
 import moon from '../../../public/moon.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export function Header() {
     return (
@@ -9,21 +10,31 @@ export function Header() {
                 <h3 className={styles.name}>Tiago</h3>
                 <ul className={styles.navLinks}>
                     <li>
-                        <a href="/">Home</a>
+                        <Link href='/'>
+                            Home
+                        </Link>
                     </li>
                     <li>
-                        <a href="/">About</a>
+                        <Link href='/'>
+                            About
+                        </Link>
                     </li>
                     <li>
-                        <a href="/">Skills</a>
+                        <Link href='/'>
+                            Skills
+                        </Link>
                     </li>
                     <li>
-                        <a href="/">Service</a>
+                        <Link href='/'>
+                            Services
+                        </Link>
                     </li>
                     <li>
-                        <a href="/">Contact</a>
+                        <Link href='/'>
+                            Contact
+                        </Link>
                     </li>
-                    <li onClick={() => console.log('Ola')}>
+                    <li>
                         <Image src={moon} alt='Lua'/>
                     </li>
                 </ul>
