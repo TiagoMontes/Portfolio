@@ -6,22 +6,13 @@ import {
     Navlinks,
     Item
 } from '../Header/styles-header';
-import { useState } from 'react';
 
-export function Header() {
-    
-    const [lightDark, setLightDark] = useState(true);
+type HeaderProps = {
+    handleLightDarkMode: any;   
+    lightDark: boolean;
+}
 
-    function handleLightDarkMode() {
-        if (lightDark) {
-            console.log('escuro');
-            setLightDark(false);
-        } else {
-            console.log('claro');
-            setLightDark(true);
-        }
-    }
-
+export function Header({ handleLightDarkMode, lightDark }: HeaderProps) {
 
     return (
         <>
