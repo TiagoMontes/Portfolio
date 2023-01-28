@@ -23,3 +23,8 @@ export const Main = styled.div<Condition>`
         `#fff`
     }
 `;
+
+export const Paragraph = styled.div`
+    height: 100vh;
+    padding: 0 170px;
+`;
